@@ -1,0 +1,66 @@
+{
+	"components":[
+		{
+			"component_type":1,
+			"component_systems_order":[11,9,7,12,13,10,1,4],
+			"component_attributes":{
+				"sector_id":[11,7,4],
+				"city_id":[-1]
+			}
+		},
+		{
+			"component_type":2,
+			"component_systems_order":[7,1,4],
+			"component_attributes":
+				{
+					"agency_id":[-1],
+					"c_type_id":[1],
+					"main_domain":[7,1]
+				}
+		},
+		{
+			"component_type":3,
+			"component_systems_order":[7,4],
+			"component_attributes":
+				{
+					"platform_id":[-1],
+					"agency_id":[-1],
+					"service_url":[-1]
+				}
+		},
+		{
+			"component_type":4,
+			"component_systems_order":[7],
+			"component_attributes":
+				{
+					"platform_id":[-1],
+					"url":[-1]
+				}
+			
+		},
+		{
+			"component_type":5,
+			"component_systems_order":[7],
+			"component_attributes":
+				{
+					"platform_id":[-1]
+				}
+			
+		},
+		{
+			"component_type":6,
+			"component_systems_order":[6],
+			"component_attributes":
+				{
+					"email":[-1],
+					"contact_number":[-1]
+				}
+		},
+		{
+			"component_type":7,
+			"component_systems_order":[11,7,5,4,1],
+			"component_attributes":{}
+		}
+
+	]
+}

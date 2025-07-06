@@ -1,0 +1,43 @@
+{
+    "read_connection":{
+			"type":1,
+			"jdbc_class":"com.microsoft.sqlserver.jdbc.SQLServerDriver",
+			"jar_path":"jars/mssql-jdbc-12.4.2.jre8.jar",
+			"server":"localhost:1433",
+			"user":"rdm_user",
+			"password":"rdm_password",
+			"component_query_path":"rdm_inputs/rdm_components_mssql.sql",
+			"component_attributes_query_path":"rdm_inputs/rdm_component_attributes_mssql.sql"
+	},
+	"write_connection":{
+			"type":1,
+			"jdbc_class":"com.microsoft.sqlserver.jdbc.SQLServerDriver",
+			"jar_path":"jars/mssql-jdbc-12.4.2.jre8.jar",
+			"server":"localhost:1433",
+			"user":"rdm_user",
+			"password":"rdm_password",
+			"batch_size":5000,
+			"tables":{
+				"1":"DGA_DWH.dbo.dim_rdm_component_matches",
+				"2":"DGA_DWH.dbo.dim_rdm_component_groups",
+				"3":"DGA_DWH.dbo.dim_rdm_group_candidate_comp",
+				"4":"DGA_DWH.dbo.dim_rdm_group_candidate_attr"				
+			}
+	},
+    "manual_file":{
+        "path":"rdm_inputs/rdm_input_manual.xlsx",
+        "sheet":"Sheet1"
+    },
+	"priority_file":{
+		"path":"rdm_inputs/rdm_priority.json"
+	},
+	"match_methods": {
+		"1":["Y","code&name_ar&name_en"],
+		"2":["Y","code&name_ar"],
+		"3":["Y","code&name_en"],
+		"4":["Y","code"],
+		"5":["Y","manual match"],
+		"7":["Y","name_ar"],
+		"8":["Y","name_en"]
+	}
+}
