@@ -1,4 +1,4 @@
-Reference Data Management (MDM) Engine
+Master Data Management (MDM) Engine
 The MDM Engine is a Python-based data harmonization tool designed to unify and standardize reference data (e.g., agencies, platforms, services) across multiple systems. It ensures consistency, accuracy, and reliability in data warehouses and analytics platforms like 360 Dashboards.
 
 🚀 Key Features
